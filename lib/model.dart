@@ -31,6 +31,8 @@
 //     final newsModel = newsModelFromJson(jsonString);
 import 'dart:convert';
 
+import 'package:flutter/cupertino.dart';
+
 NewsModel newsModelFromJson(String str) => NewsModel.fromJson(json.decode(str));
 
 String newsModelToJson(NewsModel data) => json.encode(data.toJson());
@@ -42,9 +44,9 @@ class NewsModel {
     required this.articles,
   });
 
-  final String status;
-  final int totalResults;
-  final List<Article> articles;
+  final String? status;
+  final int? totalResults;
+  final List<Article>? articles;
 
   factory NewsModel.fromJson(Map<String, dynamic> json) => NewsModel(
         status: json["status"],
@@ -56,7 +58,7 @@ class NewsModel {
   Map<String, dynamic> toJson() => {
         "status": status,
         "totalResults": totalResults,
-        "articles": List<dynamic>.from(articles.map((x) => x.toJson())),
+        "articles": List<dynamic>.from(articles!.map((x) => x.toJson())),
       };
 
   //   Map toJson() {
@@ -79,13 +81,13 @@ class Article {
     required this.publishedAt,
   });
 
-  final Source source;
+  final Source? source;
   final dynamic author;
-  final String title;
-  final String description;
-  final String url;
-  final String urlToImage;
-  final DateTime publishedAt;
+  final String? title;
+  final String? description;
+  final String? url;
+  final String? urlToImage;
+  final DateTime? publishedAt;
 
   factory Article.fromJson(Map<String, dynamic> json) => Article(
         source: Source.fromJson(json["source"]),
@@ -98,13 +100,13 @@ class Article {
       );
 
   Map<String, dynamic> toJson() => {
-        "source": source.toJson(),
+        "source": source?.toJson(),
         "author": author,
         "title": title,
         "description": description,
         "url": url,
         "urlToImage": urlToImage,
-        "publishedAt": publishedAt.toIso8601String(),
+        "publishedAt": publishedAt?.toIso8601String(),
       };
 
   //   Map<String, dynamic> toJson() {
@@ -125,7 +127,7 @@ class Source {
     required this.name,
   });
 
-  final String name;
+  final String? name;
 
   factory Source.fromJson(Map<String, dynamic> json) => Source(
         name: json["name"],
