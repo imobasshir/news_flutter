@@ -3,9 +3,9 @@ import 'package:http/http.dart' as http;
 import '../model/model.dart';
 
 class DataService {
-  Future<NewsModel> fetchNewsList() async {
+  Future<NewsModel> fetchNewsList(String info, String ctry) async {
     String url =
-        "https://newsapi.org/v2/top-headlines?country=in&category=general&pageSize=100&apiKey=71de2801cfaf4f53a09c73b0f9eec2a3";
+        "https://newsapi.org/v2/top-headlines?country=$ctry&category=$info&pageSize=60&apiKey=71de2801cfaf4f53a09c73b0f9eec2a3";
     final response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {
       // print(response.body);

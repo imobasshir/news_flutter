@@ -15,7 +15,7 @@ class _NewsApiCallState extends State<NewsApiCall> {
   @override
   void initState() {
     super.initState();
-    news = DataService().fetchNewsList();
+    news = DataService().fetchNewsList('sports', 'in');
   }
 
   @override
