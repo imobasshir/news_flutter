@@ -14,7 +14,7 @@ class NewsApiCall extends StatefulWidget {
 class _NewsApiCallState extends State<NewsApiCall> {
   Future<NewsModel> fetchNewsList() async {
     String url =
-        "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=71de2801cfaf4f53a09c73b0f9eec2a3";
+        "https://newsapi.org/v2/top-headlines?country=in&category=sports&pageSize=80&apiKey=71de2801cfaf4f53a09c73b0f9eec2a3";
     final response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {
       // print(response.body);
