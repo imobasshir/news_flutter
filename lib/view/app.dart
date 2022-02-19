@@ -71,7 +71,12 @@ class _NewsApiCallState extends State<NewsApiCall> {
                               ),
                             ),
                             onTap: () {
-                              launch(data[index].url);
+                              launch(
+                                data[index].url,
+                                forceWebView: true,
+                                enableJavaScript: true,
+                                forceSafariVC: true,
+                              );
                             },
                           ),
                         ),
