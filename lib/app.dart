@@ -28,13 +28,13 @@ class _NewsApiCallState extends State<NewsApiCall> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        // backgroundColor: Colors.white,
         elevation: 0.0,
         title: const Text(
           'News Headlines',
-          style: TextStyle(
-            color: Colors.black,
-          ),
+          // style: TextStyle(
+          //   color: Colors.black,
+          // ),
         ),
         centerTitle: true,
       ),
@@ -63,9 +63,6 @@ class _NewsApiCallState extends State<NewsApiCall> {
                           ),
                           subtitle: Text(
                             data[index].title,
-                            style: const TextStyle(
-                              color: Colors.black,
-                            ),
                           ),
                           onTap: () {
                             launch(data[index].url);
