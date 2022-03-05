@@ -38,6 +38,7 @@ class _NewsAppState extends State<NewsApp> {
       body: _bodyItem[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         elevation: 0.0,
+        selectedItemColor: Colors.black,
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentIndex,
         onTap: (value) {
