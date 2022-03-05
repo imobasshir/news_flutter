@@ -1,16 +1,24 @@
-# news
+# News App
 
-A new Flutter project.
+A news app made with Flutter and newsapi.org. It provides latest news headline with complete news at single place.
 
-## Getting Started
+## 💻 Installation
+- Updated `Flutter 2.10` now.
 
-This project is a starting point for a Flutter application.
+Open Terminal and open the location where you want to clone project and run with following commands.
+```
+git clone https://github.com/imobasshir/news_flutter.git
+cd news_flutter
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Screenshots
+<img src="https://user-images.githubusercontent.com/62945306/156894480-d924aba1-4ef6-4524-917b-4b4042952c59.jpeg" width=240> <img src="https://user-images.githubusercontent.com/62945306/156895841-577da716-fb82-44d5-957d-e01effffbcbb.jpeg" width=240> <img src="https://user-images.githubusercontent.com/62945306/156895844-f8a3633d-13a9-4225-948f-2afbdef1857c.jpeg" width=240> 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## 🔗 API Information
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+API Used: https://newsapi.org/
+
+## 🧑 Author
+### Mobasshir Imam
