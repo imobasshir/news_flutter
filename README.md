@@ -3,7 +3,7 @@
 A news app made with Flutter and newsapi.org. It provides latest news headline with complete news at single place.
 
 ## 💻 Installation
-- Updated `Flutter 2.10` now.
+- You should have updated `Flutter 2.10` now.
 
 Open Terminal and open the location where you want to clone project and run with following commands.
 ```
